@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Omnichannel Fashion Hub and Creations – KB's</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="nav-left">
+            <a href="index.html" class="logo-circle">
+                <img src="logo.png" alt="KB Logo">
+            </a>
+        </div>
+
+        <div class="nav-center">
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="ai-stylist.html">AI Stylist</a>
+            <a href="custom-fit.html">Custom Fit</a>
+            <a href="delivery.html">Delivery</a>
+            <a href="orders.html">Orders</a>
+        </div>
+
+        <div class="nav-right">
+
+            <!-- Search -->
+            <div class="search-wrap">
+                <input id="globalSearch" placeholder="Search products">
+                <div id="searchSuggestions" class="suggestions"></div>
+            </div>
+
+            <!-- Wishlist -->
+            <a class="icon-link" href="wishlist.html">
+                <i class="fa-regular fa-heart"></i>
+                <span class="badge wishlist-count">0</span>
+            </a>
+
+            <!-- Cart -->
+            <a class="icon-link cart-link" href="cart.html">
+                <i class="fa-solid fa-bucket"></i>
+                <span class="badge cart-count">0</span>
+            </a>
+
+            <!-- Login -->
+            <a href="login.html">Login / Profile</a>
+
+        </div>
+
+    </nav>
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main>
+
+        <!-- Brand Header -->
+
+        <section class="brand-header">
+            <h1>Omnichannel Fashion Hub and Creations</h1>
+            <p>KB's – A Unified Multi-Branch Fashion Experience</p>
+        </section>
+
+        <!-- ================= HERO SECTION ================= -->
+
+        <div class="hero">
+
+            <!-- Slides -->
+
+            <div class="slide active"
+                style="background-image:url('images/Priyanka-Chopras.jpg')"></div>
+
+            <div class="slide"
+                style="background-image:url('images/Elegant.jpg')"></div>
+
+            <div class="slide"
+                style="background-image:url('images/Website.jpg')"></div>
+
+            <div class="slide"
+                style="background-image:url('images/hero4.jpg')"></div>
+
+            <div class="slide"
+                style="background-image:url('images/hero5.jpg')"></div>
+
+            <!-- Overlay -->
+
+            <div class="hero-overlay"></div>
+
+            <!-- Hero Text -->
+
+            <div class="hero-text">
+
+                <h2>Crafting Styles for Every Moment</h2>
+
+                <p>Bridal • Festive • Casual • Designer</p>
+
+                <button onclick="window.location.href='collections.html'">
+                    Explore Designs
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- ================= FEATURES ================= -->
+
+        
+
+          <section class="features">
+
+    <!-- AI Stylist -->
+
+    <a class="feature-box" href="ai-stylist.html"
+       style="text-decoration:none;color:inherit">
+
+        <i class="fas fa-wand-magic-sparkles"></i>
+
+        <h3>AI Stylist</h3>
+
+        <p>Smart recommendations based on occasion, body type,
+           color preference and budget.</p>
+
+    </a>
+
+
+    <!-- Custom Fit -->
+
+    <a class="feature-box" href="custom-fit.html"
+       style="text-decoration:none;color:inherit">
+
+        <i class="fas fa-ruler-combined"></i>
+
+        <h3>Perfect Fit Guidance</h3>
+
+        <p>Create and save multiple body measurement profiles
+           for precise stitching.</p>
+
+    </a>
+
+
+    <!-- Delivery -->
+
+    <a class="feature-box" href="delivery.html"
+       style="text-decoration:none;color:inherit">
+
+        <i class="fas fa-truck"></i>
+
+        <h3>Reliable Delivery</h3>
+
+        <p>Track production and delivery timeline
+           for standard and express orders.</p>
+
+    </a>
+
+</section>
+          
+
+        <!-- ================= HELPLINE CARD ================= -->
+
+        <section class="flash-card glass-card">
+
+            <h3>Need help with measurements, customization, or delivery?</h3>
+
+            <p>• Call Support • Chat Support • Email Support</p>
+
+            <p>
+                Phone: +91 XXXXX XXXXX |
+                Email: support@kbcreations.com
+            </p>
+
+        </section>
+
+        <!-- ================= PRODUCTS ================= -->
+
+        <h2>Trending Designs</h2>
+        <section id="trendingGrid" class="product-grid"></section>
+
+        <h2>Bridal Collection</h2>
+        <section id="bridalGrid" class="product-grid"></section>
+
+    </main>
+<!-- ================= FOOTER ================= -->
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+            <h3>KB's Fashion Hub</h3>
+            <p>Omnichannel Fashion Hub and Creations</p>
+            <p>Custom tailoring • Bridal • Designer fashion</p>
+        </div>
+
+        <!-- Navigation -->
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="ai-stylist.html">AI Stylist</a>
+            <a href="custom-fit.html">Custom Fit</a>
+            <a href="delivery.html">Delivery</a>
+            <a href="orders.html">Orders</a>
+        </div>
+
+        <!-- Support -->
+        <div class="footer-support">
+            <h4>Support</h4>
+
+            <a href="wishlist.html">Wishlist</a>
+            <a href="cart.html">Cart</a>
+            <a href="login.html">Login / Profile</a>
+
+            <p>Email: support@kbcreations.com</p>
+            <p>Phone: +91 XXXXX XXXXX</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Omnichannel Fashion Hub and Creations – KB's
+    </div>
+
+</footer>
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login - KB's</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <!-- Logo -->
+        <div class="nav-left">
+            <a href="index.html" class="logo-circle">
+                <img src="logo.png">
+            </a>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="nav-center">
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="ai-stylist.html">AI Stylist</a>
+            <a href="custom-fit.html">Custom Fit</a>
+            <a href="delivery.html">Delivery</a>
+            <a href="orders.html">Orders</a>
+        </div>
+
+        <!-- Right Section -->
+        <div class="nav-right">
+
+            <!-- Search -->
+            <div class="search-wrap">
+                <input id="globalSearch" placeholder="Search products">
+                <div id="searchSuggestions" class="suggestions"></div>
+            </div>
+
+            <!-- Wishlist -->
+            <a class="icon-link" href="wishlist.html">
+                <i class="fa-regular fa-heart"></i>
+                <span class="badge wishlist-count">0</span>
+            </a>
+
+            <!-- Cart -->
+            <a class="icon-link cart-link" href="cart.html">
+                <i class="fa-solid fa-bucket"></i>
+                <span class="badge cart-count">0</span>
+            </a>
+
+            <!-- Login/Profile -->
+            <a href="login.html">Login / Profile</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- MAIN LOGIN SECTION -->
+    <main>
+
+        <section class="glass-card" style="max-width:420px; margin:auto">
+
+            <h2>Login</h2>
+
+            <!-- Email -->
+            <input
+                id="loginEmail"
+                type="email"
+                placeholder="Email"
+            >
+
+            <!-- Password -->
+            <input
+                id="loginPassword"
+                type="password"
+                placeholder="Password"
+            >
+
+            <!-- Login Button -->
+            <button id="loginBtn">
+                Login
+            </button>
+
+            <!-- Signup Link -->
+            <p>
+                <a href="signup.html">Create account</a>
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Script -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

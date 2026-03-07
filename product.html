@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Product Details - KB's</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <!-- Logo -->
+        <div class="nav-left">
+            <a href="index.html" class="logo-circle">
+                <img src="logo.png">
+            </a>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="nav-center">
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="ai-stylist.html">AI Stylist</a>
+            <a href="custom-fit.html">Custom Fit</a>
+            <a href="delivery.html">Delivery</a>
+            <a href="orders.html">Orders</a>
+        </div>
+
+        <!-- Right Section -->
+        <div class="nav-right">
+
+            <!-- Search -->
+            <div class="search-wrap">
+                <input id="globalSearch" placeholder="Search products">
+                <div id="searchSuggestions" class="suggestions"></div>
+            </div>
+
+            <!-- Wishlist -->
+            <a class="icon-link" href="wishlist.html">
+                <i class="fa-regular fa-heart"></i>
+                <span class="badge wishlist-count">0</span>
+            </a>
+
+            <!-- Cart -->
+            <a class="icon-link cart-link" href="cart.html">
+                <i class="fa-solid fa-bucket"></i>
+                <span class="badge cart-count">0</span>
+            </a>
+
+            <!-- Login -->
+            <a href="login.html">Login / Profile</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- PRODUCT PAGE -->
+    <main class="product-layout">
+
+        <!-- PRODUCT IMAGES -->
+        <section class="product-panel">
+
+            <div class="preview">
+                <img id="mainPreview" src="trending1.jpg" alt="preview">
+                <div id="previewOverlay"></div>
+            </div>
+
+            <div id="thumbWrap" class="thumb-wrap"></div>
+
+        </section>
+
+
+        <!-- PRODUCT DETAILS -->
+        <section class="product-panel">
+
+            <h2 id="productName"></h2>
+            <h3 id="productPrice"></h3>
+
+            <p id="productDesc"></p>
+
+            <p>
+                <strong>Delivery:</strong>
+                Standard stitching 10–15 days |
+                Express stitching 2 days (subscription required)
+            </p>
+
+
+            <!-- CUSTOMIZATION OPTIONS -->
+            <div class="custom-list">
+
+                <button class="customize-btn" data-option="Fabric">Fabric</button>
+                <button class="customize-btn" data-option="Color">Color</button>
+
+                <button class="customize-btn" data-option="Pattern">Pattern</button>
+                <button class="customize-btn" data-option="Sleeve Style">Sleeve Style</button>
+
+                <button class="customize-btn" data-option="Neck Style">Neck Style</button>
+                <button class="customize-btn" data-option="Embroidery">Embroidery</button>
+
+                <button class="customize-btn" data-option="Lining">Lining</button>
+
+            </div>
+
+
+            <!-- PRODUCT SUMMARY -->
+            <h4>Product Summary</h4>
+
+            <ul id="summary"></ul>
+
+
+            <!-- ACTION BUTTONS -->
+            <button id="addToCartProduct">
+                Add to Cart
+            </button>
+
+            <button id="addToWishlistProduct">
+                Add to Wishlist
+            </button>
+
+
+            <hr>
+
+
+            <!-- RATINGS & REVIEWS -->
+            <h4>
+                Ratings & Reviews
+                (Avg: <span id="avgRating">0.0</span> ★)
+            </h4>
+
+            <ul id="reviewList"></ul>
+
+
+            <!-- REVIEW FORM -->
+            <form id="reviewForm">
+
+                <select id="rating">
+                    <option value="5">5★</option>
+                    <option value="4">4★</option>
+                    <option value="3">3★</option>
+                </select>
+
+                <textarea
+                    id="reviewText"
+                    placeholder="Write your review"
+                    required>
+                </textarea>
+
+                <button>
+                    Submit Review
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- CUSTOMIZATION MODAL -->
+    <dialog id="optionModal">
+
+        <h3 id="modalTitle"></h3>
+
+        <div id="optionList" class="option-grid"></div>
+
+        <button onclick="optionModal.close()">
+            Close
+        </button>
+
+    </dialog>
+
+
+    <!-- Script -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

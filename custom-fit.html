@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Custom Fit - KB's</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <!-- Logo -->
+        <div class="nav-left">
+            <a href="index.html" class="logo-circle">
+                <img src="logo.png">
+            </a>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="nav-center">
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="ai-stylist.html">AI Stylist</a>
+            <a href="custom-fit.html">Custom Fit</a>
+            <a href="delivery.html">Delivery</a>
+            <a href="orders.html">Orders</a>
+        </div>
+
+        <!-- Right Section -->
+        <div class="nav-right">
+
+            <!-- Search -->
+            <div class="search-wrap">
+                <input id="globalSearch" placeholder="Search products">
+                <div id="searchSuggestions" class="suggestions"></div>
+            </div>
+
+            <!-- Wishlist -->
+            <a class="icon-link" href="wishlist.html">
+                <i class="fa-regular fa-heart"></i>
+                <span class="badge wishlist-count">0</span>
+            </a>
+
+            <!-- Cart -->
+            <a class="icon-link cart-link" href="cart.html">
+                <i class="fa-solid fa-bucket"></i>
+                <span class="badge cart-count">0</span>
+            </a>
+
+            <!-- Login -->
+            <a href="login.html">Login / Profile</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <h2>Perfect Fit Measurement Profiles</h2>
+
+        <p>
+            Save exact measurements (no S/M/L) and use profiles while ordering.
+        </p>
+
+
+        <!-- MEASUREMENT FORM -->
+        <section class="glass-card">
+
+            <form id="measurementForm" class="form-grid">
+
+                <input name="name" placeholder="Profile Name" required>
+
+                <input name="chest" placeholder="Chest (cm)" required>
+
+                <input name="waist" placeholder="Waist (cm)" required>
+
+                <input name="hip" placeholder="Hip (cm)" required>
+
+                <input name="shoulder" placeholder="Shoulder width (cm)" required>
+
+                <input name="sleeve" placeholder="Sleeve length (cm)" required>
+
+                <input name="neck" placeholder="Neck size (cm)" required>
+
+                <input name="height" placeholder="Height (cm)" required>
+
+                <button>Save Profile</button>
+
+            </form>
+
+        </section>
+
+
+        <!-- FEATURES SECTION -->
+        <section class="features">
+
+            <!-- Measurement Guide -->
+            <div class="glass-card">
+
+                <h4>Measurement Guide</h4>
+
+                <img
+                    src="trending 10.jpg"
+                    style="width:100%; height:220px; object-fit:cover; border-radius:10px"
+                >
+
+                <p>
+                    Use tape snugly around body points for accurate custom tailoring.
+                </p>
+
+            </div>
+
+
+            <!-- Saved Profiles -->
+            <div class="glass-card">
+
+                <h4>Saved Profiles</h4>
+
+                <ul id="profiles"></ul>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Script -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
